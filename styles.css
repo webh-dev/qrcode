@@ -1,0 +1,67 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    min-height: 100vh;
+    background-color: rgb(255, 253, 248);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    position: relative;
+    height: max-content;
+    width: 75%;
+    max-width: 700px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(247, 240, 217);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+    margin: 50px auto;
+}
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+input, button {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+button {
+    background-color: rgb(163, 212, 255);
+    transition: all 0.15s;
+}
+button:hover {
+    filter: brightness(0.9);
+}
+button:active {
+    filter: brightness(0.7);
+}
+.qrcode {
+    margin: 50px auto;
+    width: max-content;
+    opacity: 0;
+    border: 6px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    transform: translateY(10px);
+    transition: all 0.15s;
+}
+.active {
+    opacity: 1;
+    transform: translateY(0px);
+}
+#download-button {
+    margin: 0px auto;
+    width: 300px;
+}
